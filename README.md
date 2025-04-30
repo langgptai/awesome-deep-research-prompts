@@ -1,6 +1,94 @@
 # deep-research-prompts
 Prompts for deep research （openai， gemini，qwen）
 
+
+## Research Plan
+
+> from: https://www.reddit.com/r/ChatGPTPro/comments/1in87ic/mastering_aipowered_research_my_guide_to_deep/
+
+prompt:
+
+~~~
+You are given various potential options or approaches for a project. Convert these into a  
+well-structured research plan that:  
+
+1. Identifies Key Objectives  
+   - Clarify what questions each option aims to answer  
+   - Detail the data/info needed for evaluation  
+
+2. Describes Research Methods  
+   - Outline how you’ll gather and analyze data  
+   - Mention tools or methodologies for each approach  
+
+3. Provides Evaluation Criteria  
+   - Metrics, benchmarks, or qualitative factors to compare options  
+   - Criteria for success or viability  
+
+4. Specifies Expected Outcomes  
+   - Possible findings or results  
+   - Next steps or actions following the research  
+
+Produce a methodical plan focusing on clear, practical steps.  
+~~~
+
+## Meta Prompt for Deep Research
+
+> from: https://x.com/buccocapital/status/1890745551995424987
+
+write all your thoughts out and ask GPT-o1 to turn it into a prompt using the best practices below:
+
+Prompt:
+~~~
+Please build a prompt using the following guidelines:
+
+Define the Objective: 
+- Clearly state the main research question or task.
+- Specify the desired outcome (e.g., detailed analysis, comparison, recommendations).
+
+Gather Context and Background:
+- Include all relevant background information, definitions, and data.
+- Specify any boundaries (e.g., scope, timeframes, geographic limits).
+
+Use Specific and Clear Language:
+- Provide precise wording and define key terms.
+- Avoid vague or ambiguous language.
+
+Provide Step-by-Step Guidance:
+- Break the task into sequential steps or sub-tasks.
+- Organize instructions using bullet points or numbered lists.
+
+Specify the Desired Output Format:
+- Describe how the final answer should be organized (e.g., report format, headings, bullet points, citations).
+Include any specific formatting requirements.
+
+Balance Detail with Flexibility:
+- Offer sufficient detail to guide the response while allowing room for creative elaboration.
+- Avoid over-constraining the prompt to enable exploration of relevant nuances.
+
+Incorporate Iterative Refinement:
+- Build in a process to test the prompt and refine it based on initial outputs.
+- Allow for follow-up instructions to adjust or expand the response as needed.
+
+Apply Proven Techniques:
+- Use methods such as chain-of-thought prompting (e.g., “think step by step”) for complex tasks.
+- Encourage the AI to break down problems into intermediate reasoning steps.
+
+Set a Role or Perspective:
+- Assign a specific role (e.g., “act as a market analyst” or “assume the perspective of a historian”) to tailor the tone and depth of the analysis.
+
+Avoid Overloading the Prompt:
+- Focus on one primary objective or break multiple questions into separate parts.
+- Prevent overwhelming the prompt with too many distinct questions.
+
+Request Justification and References:
+- Instruct the AI to support its claims with evidence or to reference sources where possible.
+- Enhance the credibility and verifiability of the response.
+
+Review and Edit Thoroughly:
+- Ensure the final prompt is clear, logically organized, and complete.
+- Remove any ambiguous or redundant instructions.
+~~~
+
 ## 通用 Prompt
 
 > 来自：https://x.com/python_xxt/status/1917138021113278591
@@ -9,7 +97,7 @@ Prompts for deep research （openai， gemini，qwen）
 
 用法: 将 "请帮我开展一次深度研究，帮我快速、全面、深刻地理解这 【XXX】。  " 里的 xxx换成你自己想调研学习的内容。
 
-提示词：
+prompt：
 ~~~
 请帮我开展一次深度研究，帮我快速、全面、深刻地理解这 【XXX】。  
 
@@ -22,4 +110,22 @@ Prompts for deep research （openai， gemini，qwen）
 参考资料  请参考Wikipedia、相关书籍、学术和科普期刊网站、权威媒体和杂志刊物的网站；  
 
 视觉化 请按需在研究报告中采用图表和可视化媒介，来辅助和促进理解
+~~~
+
+## Market Competition Analysis Prompt
+
+~~~
+Analyze competitors in [Industry/Niche]:
+- Primary competitors: [List 3-5 main competitors]
+- Geographic focus: [Specify market region]
+- Time period: [Define analysis timeframe]
+- Key metrics: [List specific performance indicators]
+
+Required outputs:
+1. Competitive positioning analysis
+2. Strengths/weaknesses assessment
+3. Market opportunity identification
+4. Strategic recommendations
+5. Implementation timeline with KPIs
+
 ~~~
