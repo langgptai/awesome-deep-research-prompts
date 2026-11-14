@@ -4,7 +4,12 @@ Prompts for deep research （openai， gemini，qwen）
 
 ## 2026 Deep Research 工具速览
 
-> 2026-08 更新。下方提示词对各家 Deep Research 产品通用；这里补一份「在哪里跑」的清单。
+> 2026-08 更新，2026-11 补充。下方提示词对各家 Deep Research 产品通用；这里补一份「在哪里跑」的清单。
+
+**2026-11 变化**
+- **OpenAI API**：`o3-deep-research` 与 `o4-mini-deep-research` 已于 2026-07-23 下线（[弃用说明](https://developers.openai.com/api/docs/deprecations)），API 中改用 GPT-6 系列模型 + 网页搜索工具自行搭研究流程；ChatGPT 内的 Deep Research 产品照常可用。
+- **Gemini Deep Research**：当前 Agent ID 为 `deep-research-preview-04-2026`（偏速度）与 `deep-research-max-preview-04-2026`（偏全面），只能通过 Interactions API 以 `background=True` 调用；设 `collaborative_planning: True` 可先审阅研究计划再开跑——本仓库的 [Research Plan](#research-plan) 提示词正适合这一步（[文档](https://aistudio.google.com/docs/deep-research)）。
+- **DeepSeek**：11 月 13 日开放深度思考搜索、URL 读取，以及独立的 Search / Fetch API，可直接用 `deepseek-flash` 跑本仓库提示词（[公告](https://api-docs.deepseek.com/news/news261113)）。
 
 **闭源产品**：ChatGPT Deep Research（[GPT-5.6](https://openai.com/index/gpt-5-6/) 驱动）· Gemini Deep Research（[Gemini 3.x](https://ai.google.dev/gemini-api/docs/changelog)）· Claude Research（[Claude 5 家族](https://platform.claude.com/docs/en/about-claude/models/overview)）· 豆包 / 千问 / DeepSeek 应用内的「深度研究」模式
 
